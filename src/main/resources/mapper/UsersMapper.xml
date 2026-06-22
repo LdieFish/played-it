@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.playedit.module.core.mapper.UsersMapper">
+
+    <resultMap id="BaseResultMap" type="com.playedit.module.core.entity.Users">
+            <id property="id" column="id" />
+            <result property="openid" column="openid" />
+            <result property="unionid" column="unionid" />
+            <result property="nickname" column="nickname" />
+            <result property="avatarUrl" column="avatar_url" />
+            <result property="steamId" column="steam_id" />
+            <result property="steamNickname" column="steam_nickname" />
+            <result property="steamProfileUrl" column="steam_profile_url" />
+            <result property="steamBindType" column="steam_bind_type" />
+            <result property="steamVerified" column="steam_verified" />
+            <result property="steamBindTime" column="steam_bind_time" />
+            <result property="userRole" column="user_role" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+            <result property="deleted" column="deleted" />
+            <result property="deleteTime" column="delete_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,openid,unionid,nickname,avatar_url,steam_id,
+        steam_nickname,steam_profile_url,steam_bind_type,steam_verified,steam_bind_time,
+        user_role,create_time,update_time,deleted,delete_time
+    </sql>
+</mapper>
