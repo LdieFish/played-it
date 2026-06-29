@@ -40,3 +40,14 @@ knife4j:
 steam:
   api:
     key: <Steam_API_Key>
+
+jwt:
+  secret: played-it-dev-secret-change-in-production
+  expire-days: 30
+  header: Authorization
+  prefix: "Bearer "
+
+wx:
+  miniapp:
+    app-id: <Your_Wx_AppId>
+    app-secret: <Your_Wx_AppSecret>
